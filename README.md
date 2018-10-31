@@ -16,13 +16,15 @@ In this lab, we will introduce how to program with [Pepper](https://www.softbank
 ## Table of Contents
 
 - [Overview](#overview)
-- [Preparation for Programming](#configuration)
-- [Choregraph Example](#implementation)
-- [Python Example](#tips)
+- [Preparation for Programming](#preparation-for-programming)
+- [Choregraph Example](#choregraph-example)
+- [Python Example](#python-example)
+- [More resources](#more-resources)
+- [Other issues](#other-issues)
 - [Contribute](#contribute)
 - [Meta](#meta)
 
-## Overview
+## Overview 
 
 ![](images/Nao_Pepper.jpg)
 
@@ -70,7 +72,7 @@ You need to sign up an [account](https://community.ald.softbankrobotics.com/en/r
 
 ### How to use _Choregraphe_?
 
-Before starting the application, we need to connect to the '**NaoRobotNet**' (the password will be announced during the class). Then the initial interface of the application looks like below:
+Before starting the application, we need to connect your computer and the robot to the  same network '**PepperRobot**' (the password will be announced during the class). Then the initial interface of the application looks like below:
 
 <img src="./images/interface.png" alt="interface" width="50%">
 
@@ -124,16 +126,43 @@ In the _Demo_ folder, the additional sound and image files are stored in the `ht
 
 ## Python Example
 
-- [SoftBank Robotics Documentation](http://doc.aldebaran.com/)
-- [Choregraphe Suite](http://doc.aldebaran.com/2-5/software/choregraphe/index.html)
+First, you need to set up the [python 2.7](https://docs.python.org/2/) environment in your computer. Then, install the NAOqi python SDK following the [offical guide](http://doc.aldebaran.com/2-5/dev/python/install_guide.html). After setting up the environment, you can type in the following code to test your environment setup:
+
+```python
+from naoqi import ALProxy
+tts = ALProxy("ALTextToSpeech", "<IP of your robot>", 9559)
+tts.say("Hello, world!")
+```
+
+If the Pepper speaks ``Hello, world!``, then you have set up the development environment successfully. We will announce the IP address during the class. If you forget the IP when you experiment, please press pepper’s Chest button, and it will say it.
+
+There is a demo code provided in this repository for you to get aware how to call NAOqi APIs in python. This demo aims to detect human faces and tell their genders and expressions from what has been detected. After changing the IP address of the robot, you can run this code by simply typing
+
+```bash
+python expression_teller.py
+```
+
+in python environment. There are also plenty of demos offered on the official documentation website.
+
+## More resources
+
+Thanks for the previous COMP 4461 TA [Zhida SUN's](http://zsunaj.student.ust.hk/) tutorials: [lab3](https://github.com/sunzhida/COMP4461_2017Fall_Lab3) and [lab4](https://github.com/sunzhida/COMP4461_2017Fall_Lab4). You can refer to these two tutorials as they have more details about installing the softwares for programming. 
+
+You can also search the "Pepper robot" or "Nao robot" in Youtube to see what other people program the robots for. 
+
+## Other issues 
+
+- Do not try to fix the Pepper or Nao robot's arms/hands in the same gesture for a long time, it will break the robots!
+
+- The capabilities of built-in speech recognition and vision processing packages are limited. Feel free to use your own laptop for record the voice (and recognize the speech using other APIs like Google Speech API) and send the command to control the robot in real time. 
 
 ## Contribute
 
-We would love you for the contribution to **Lab3**, check the ``LICENSE`` file for more information.
+We would love you for the contribution to **Project 3**, check the ``LICENSE`` file for more information.
 
 ## Meta
 
-[Zhida Sun](http://zsunaj.student.ust.hk/). Distributed under the MIT license. See ``LICENSE`` for more information.
+[Zhenhui PENG](http://zpengab.student.ust.hk/). Distributed under the MIT license. See ``LICENSE`` for more information.
 
 [chor-image]:https://img.shields.io/badge/Choregraphe-2.5.5-008C96.svg
 [chor-url]: https://developer.softbankrobotics.com/us-en/downloads/pepper
