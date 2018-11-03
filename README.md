@@ -20,6 +20,7 @@ In this lab, we will introduce how to program with [Pepper](https://www.softbank
 - [Choregraph Example](#choregraph-example)
 - [Python Example](#python-example)
 - [More resources](#more-resources)
+- [Useful tips](#useful-tips)
 - [Other issues](#other-issues)
 - [Contribute](#contribute)
 - [Meta](#meta)
@@ -56,7 +57,7 @@ The SoftBank provides serveral ways to program the Pepper or Nao robots, check i
 
 ## Preparation for Programming
 
-### Install _Choregraphe_ or Naoqi python SDK?
+### Install _Choregraphe_ or Naoqi python SDK
 
 For Choregraphe, refer to the official [installation guide](http://doc.aldebaran.com/2-5/software/choregraphe/installing.html). 
 
@@ -142,7 +143,7 @@ There is a demo code provided in this repository for you to get aware how to cal
 python expression_teller.py
 ```
 
-in python environment. There are also plenty of demos offered on the official documentation website.
+This example showcases how to track people, get people's position, gender, and emotion, and speech recognition, and textToSpeech. There are also plenty of demos offered on the official documentation website.
 
 ## More resources
 
@@ -150,7 +151,26 @@ Thanks for the previous COMP 4461 TA [Zhida SUN's](http://zsunaj.student.ust.hk/
 
 You can also search the "Pepper robot" or "Nao robot" in Youtube to see what other people program the robots for. 
 
+## Useful tips
+
+- Turn on or Turn off the robots: long press the breast button.
+
+- Turn the robot in the rest mode or wake it up: double press the breast button.
+
+- Get the robot IP: short press the breast button.
+
+- Sometimes it needs a long time to turn on the robots, wait patiently or ask the TA for help. 
+
+- When they are encharged, the motion functions (e.g., move forward) are disabled by default. 
+
+- The red or yellow LEDs lights indicates errors or warnings, try to softly fix them or ask the TA for help. 
+
+- Your computer should connect to the same WiFi as the robots. 
+
+- There are some differences between Pepper and Nao, the official documents will give a icon of the robot if that part is specific for a certain robot, check it first. 
+
 ## Other issues 
+- Take care of the robots! Do not hit them!
 
 - Do not try to fix the Pepper or Nao robot's arms/hands in the same gesture for a long time, it will break the robots!
 

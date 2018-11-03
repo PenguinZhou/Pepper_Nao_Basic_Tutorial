@@ -18,6 +18,8 @@ class HumanTrackedEventWatcher(ALModule):
         ALModule.__init__(self, "humanEventWatcher")
         global memory
         memory = ALProxy("ALMemory", ip_robot, port_robot)
+        #Check here for the memory.subscribeToEvent() function
+        #http://doc.aldebaran.com/2-5/naoqi/core/almemory-api.html#ALMemoryProxy::subscribeToEvent__ssCR.ssCR.ssCR
         memory.subscribeToEvent("ALBasicAwareness/HumanTracked",
                                 "humanEventWatcher",
                                 "onHumanTracked")
@@ -64,6 +66,8 @@ class HumanTrackedEventWatcher(ALModule):
             self.speech_reco.setVisualExpression(True)
             self.speech_reco.subscribe("BasicAwareness_Test")
             self.is_speech_reco_started = True
+            tts = ALProxy("ALTextToSpeech", ip_robot, port_robot)
+            tts.say("I hear that you said yes or no.")
             print "start ASR"
 
     def stop_speech_reco(self):
