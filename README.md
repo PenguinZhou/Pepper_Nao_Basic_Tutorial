@@ -169,10 +169,16 @@ You can also search the "Pepper robot" or "Nao robot" in Youtube to see what oth
 
 - There are some differences between Pepper and Nao, the official documents will give a icon of the robot if that part is specific for a certain robot, check it first. 
 
+- The OS of our Pepper robot is [2.5.5](http://doc.aldebaran.com/2-5/index_dev_guide.html), while the OS of our Nao robot is [2.1.4](http://doc.aldebaran.com/2-1/dev/python/examples.html#python-examples). Please refer to relevant documents (above links) and download corresponding software for programming these two robots. 
+
+- The example here is for Pepper. Nao should be similar.
+
 ## Other issues 
 - Take care of the robots! Do not hit them!
 
 - Do not try to fix the Pepper or Nao robot's arms/hands in the same gesture for a long time, it will break the robots!
+
+- For Windows, if you want to use python SDK, make sure that you install the python 2.732bit as it needs to match the SDK (32bit). Using conda may help you to settle the [environemnt](https://stackoverflow.com/questions/33709391/using-multiple-python-engines-32bit-64bit-and-2-7-3-5).
 
 - The capabilities of built-in speech recognition and vision processing packages are limited. Feel free to use your own laptop for record the voice (and recognize the speech using other APIs like Google Speech API) and send the command to control the robot in real time. 
 

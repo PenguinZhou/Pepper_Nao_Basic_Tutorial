@@ -22,6 +22,7 @@
         <File name="swiftswords_ext" src="behavior_1/swiftswords_ext.mp3" />
         <File name="taichimove" src="behavior_1/taichimove.pmt" />
         <File name="HKUST.SENG_AR_LiPHY" src="html/imgs/HKUST.SENG_AR_LiPHY.jpg" />
+        <File name="" src=".DS_Store" />
     </Resources>
     <Topics />
     <IgnoredPaths />

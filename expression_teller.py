@@ -2,7 +2,7 @@ from naoqi import ALProxy, ALBroker, ALModule
 import time
 import sys
 
-ip_robot = "<your ip address>"
+ip_robot = "192.168.1.100"  #"<your ip address>"
 port_robot = 9559
 
 
@@ -66,8 +66,6 @@ class HumanTrackedEventWatcher(ALModule):
             self.speech_reco.setVisualExpression(True)
             self.speech_reco.subscribe("BasicAwareness_Test")
             self.is_speech_reco_started = True
-            tts = ALProxy("ALTextToSpeech", ip_robot, port_robot)
-            tts.say("I hear that you said yes or no.")
             print "start ASR"
 
     def stop_speech_reco(self):
