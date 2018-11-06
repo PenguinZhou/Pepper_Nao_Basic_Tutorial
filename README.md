@@ -33,7 +33,7 @@ In this lab, we will introduce how to program with [Pepper](https://www.softbank
 
 [Pepper](https://en.wikipedia.org/wiki/Pepper_(robot)) is a humanoid robot by Aldebaran Robotics and SoftBank designed with the ability to read emotions. Check the following links for more description of Pepper Robot: 
 
-- [Developer guide](http://doc.aldebaran.com/2-4/family/pepper_technical/index_pep.html) 
+- [Developer guide](http://doc.aldebaran.com/2-5/family/pepper_technical/index_pep.html) 
 - [How to Create a Great Experience with Pepper](http://doc.aldebaran.com/download/Pepper_B2BD_guidelines_Sept_V1.5.pdf)
 
 ### What is _Nao_?
