@@ -169,9 +169,9 @@ You can also search the "Pepper robot" or "Nao robot" in Youtube to see what oth
 
 - There are some differences between Pepper and Nao, the official documents will give a icon of the robot if that part is specific for a certain robot, check it first. 
 
-- The OS of our Pepper robot is [2.5.5](http://doc.aldebaran.com/2-5/index_dev_guide.html), while the OS of our Nao robot is [2.1.4](http://doc.aldebaran.com/2-1/dev/python/examples.html#python-examples). Please refer to relevant documents (above links) and download corresponding software for programming these two robots. 
+- The OS of our Pepper robot is [2.5.5](http://doc.aldebaran.com/2-5/index_dev_guide.html), while the OS of our Nao robot is [2.1.4](http://doc.aldebaran.com/2-1/dev/python/examples.html#python-examples). Please refer to relevant documents (above links) and download corresponding software for programming these two robots, though some 2.5.5 example can also work for NAO. 
 
-- The example here is for Pepper. Nao should be similar.
+- The example here is for Pepper. Nao should be similar. The Nao Example folders contain some example for Nao, but be attention not to make it move, it is too easy to fall down!
 
 ## Other issues 
 - Take care of the robots! Do not hit them!
